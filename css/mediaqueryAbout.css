@@ -1,0 +1,27 @@
+
+  @media only screen and (max-width: 426px) and (min-width: 320px){
+    .fs-35{
+      font-size: 20px;
+    }
+    .fs-50{
+      font-size: 40px;
+    }
+    .fs-icon{
+font-size: 25px;
+    }
+    .fs-34{
+      font-size: 34px;
+    }
+    /* .green-button{
+      right: 16px;
+    top: 186px;
+    } */
+    /* .fs-30{
+      font-size: 34px;
+        } */
+  }
+
+ 
+
+
+

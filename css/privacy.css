@@ -1,0 +1,70 @@
+.privacy-main-heading {
+  font-family: Poppins;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 40.5px;
+  text-align: center;
+  min-height: 41px;
+  top: 40px;
+  text-transform: capitalize;
+}
+
+.privacy-sub-heading-one {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31.5px;
+  min-height: 31.5px;
+  text-align: left;
+  color: black;
+  text-transform: capitalize;
+}
+
+.privacy-sub-heading-two {
+  min-height: 27px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #414141;
+  text-transform: capitalize;
+}
+
+.privacy-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  min-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #333333;
+}
+.privacy-bullet {
+  color: #414141;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  min-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+.fs-18px {
+  font-size: 18px;
+}
+.privacy-heading-third-div {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31.5px;
+  text-align: left;
+  color: #414141;
+  text-transform: capitalize;
+}
+
+::marker{
+    font-size: 14px;
+    color: #414141;
+}

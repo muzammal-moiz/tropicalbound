@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- <link rel="stylesheet" href="../css/mediaQueryHome.css" /> -->
+
+  </head>
+  <style>
+
+
+.owl-carousel .owl-item img {
+    width: initial;
+  }
+  .activity-page-carousel .owl-item img {
+    width: 100%;
+    /* height: 695px; */
+  }
+
+  .checkin-checkout-section {
+    position: absolute;
+    top: -25px;
+    z-index: 100;
+    left: 10px;
+  }
+
+  .camera-icon p {
+    font-size: 22px !important;
+  }
+
+  .price-per-night {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    height: 69px;
+    padding: 20px;
+    border-radius: 50px;
+    background: #000000;
+    text-align: center;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .header-heading {
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .header-bottom-leave {
+    z-index: 123;
+    bottom: -60px !important;
+    left: -55px;
+  }
+
+  .available-dates-table tr td {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+    padding-top: 25px;
+  }
+
+  .available-dates-table tr td:last-child {
+    text-align: end;
+  }
+
+  @media (min-width: 992px) and (max-width : 1200px) {
+
+    .camera-icon {
+      margin-top: -142px;
+      right: -3px;
+
+    }
+
+    .camera-icon p {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 552px) and (max-width : 991px) {
+    .pink-button {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+
+
+    .price-per-night {
+      font-size: 18px;
+    }
+
+    .camera-icon {
+    margin-top: -110px !important;
+    right: 0px;
+}
+
+    .camera-icon p {
+      font-size: 14px !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .calender-navbar-collapse {
+      width: 100%;
+      border-radius: 0px 0px 0px 0px;
+    }
+
+    .Amenities-navbar-collapse {
+      width: 100%;
+      border-radius: 0px 0px 0px 0px;
+    }
+    .top-green-leaf{
+width: 115px;
+height: 115px;
+top:-40px !important;
+    }
+  }
+
+  @media (max-width: 552px) {
+    .activity-page-carousel .owl-item img {
+    width: 100%;
+    height: 340px;
+}
+
+    .header-data {
+      bottom: 40px !important;
+    }
+    .activity-page-carousel .owl-nav button.owl-next{
+      right: -45px !important;
+    }
+    .price-per-night {
+      font-size: 12px;
+      font-weight: 500;
+      height: 33px;
+      padding: 20px;
+      border-radius: 50px;
+      background: #000000;
+      text-align: center;
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-heading {
+      font-size: 27px;
+      line-height: 30px;
+    }
+
+    .header-img {
+      height: 346px;
+    }
+
+    .camera-icon {
+    margin-top: -70px !important;
+    padding: 6px 6px !important;
+    right: 10px !important;
+}
+
+    .camera-icon p {
+      font-size: 8px !important;
+    }
+
+    .header-bottom-leave {
+      bottom: -234px !important;
+      left: -31px;
+      height: 130px;
+      width: 152px;
+
+    }
+
+    .multi-carousel .owl-nav button.owl-next {
+      right: -40px;
+    }
+
+    .multi-carousel .owl-nav button.owl-prev {
+      left: 0px;
+    }
+  }
+</style>
+
+  <body>
+    <div class="logo">
+      <div class="w-100  position-absolute"
+        style="background-color: #000; height: 19px;">
+      </div>
+  
+      <nav class="navbar navbar-expand-xl container-fluid">
+        <div
+          class="d-flex justify-content-center w-100">
+          <div class="ms-2 ms-md-3 ms-lg-5 ms-xl-3 ">
+            <a class="navbar-brand" href="../html/home.html"><img
+                src="../assests/Logo.png" class="logo-width" /></a>
+          </div>
+          <div class="container-fluid mt-xl-5 d-flex justify-content-end align-items-center ms-0 ms-md-3 ms-lg-3 ms-xl-0 w-100">
+            <div
+              class=" collapse navbar-collapse justify-content-center"
+              id="navbarText">
+              <div class="navbar-nav gap-5 gap-xl-3">
+                <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#navbarText"
+                  aria-controls="navbarText" aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="position: absolute; right: 10px; top: 5px">
+                  <i class="fa fa-close"></i>
+                </button>
+                <a class="nav-link  fs-16" aria-current="page"
+                  href="../html/home.html">Home</a>
+                <a class="nav-link fs-16"
+                  href="../html/Aloha Deals.html">Aloha
+                  Deals</a>
+                <a class="nav-link  fs-16" href="../html/About.html">About</a>
+                <a class="nav-link  fs-16"
+                  href="../html/Activity.html">Activities</a>
+                <a class="nav-link active fs-16"
+                  href="../html/Services.html">Tropical
+                  Links</a>
+                <a class="nav-link fs-16"
+                  href="../html/Testominals.html">Testimonials</a>
+                <a class="nav-link fs-16"
+                  href="../html/contact.html">Contact</a>
+              </div>
+            </div>
+            <div class="px-xl-5 px-0 pt-4 pt-xl-0 d-flex">
+             
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">
+                  <img src="../assests/profile.svg" width="34px;" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end  border-0 rounded-0 rounded-bottom m-0">
+                    <a href="userdashboard/settings-personal-information.html" class="dropdown-item">My Profile</a>
+                    <hr class="dropdown-divider">
+                    <a href="userDashboard/settings.html" class="dropdown-item">Settings</a>
+                    <hr class="dropdown-divider">
+                    <a href="authentication/login.html" class="dropdown-item">Log In</a>
+                </div>
+            </div>
+              <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+    </div>
+    <!-- Amenities Navbar -->
+    <div class="Amenities-navbar">
+      <nav class="Amenities-navbar navbar">
+        <div class="container-fluid">
+          <div class="collapse Amenities-navbar-collapse overflow-auto"
+            id="Amenities-navbarText">
+            <div class="navbar-nav gap-4">
+              <div class="d-flex justify-content-between">
+                <h1 class="fs-19 fw-600 mb-0">Amenties</h1>
+                <button class="Amenities-navbar-toggler navbar-toggler"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#Amenities-navbarText"
+                  aria-controls="Amenities-navbarText" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa-solid fa-circle-xmark bg-pink"></i>
+                </button>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <h1 class="fs-15 fw-500 mb-0">Activities</h1>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Free
+                    Parking</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales"
+                    class="fs-15 fw-500 gray">Hairdryer</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Fridge</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Library</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Oven</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Stoves</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">TV</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Air
+                    conditioning</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">BBQ
+                    grills</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Private
+                    bathroom</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Dryer</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <h1 class="fs-15 fw-500 mb-0">Media and technology</h1>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Free
+                    Parking</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales"
+                    class="fs-15 fw-500 gray">Hairdryer</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Fridge</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Library</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Oven</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Stoves</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">TV</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Air
+                    conditioning</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">BBQ
+                    grills</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Private
+                    bathroom</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 mt-3">
+                <div class="justify-content-between d-flex">
+                  <label for="scales" class="fs-15 fw-500 gray">Dryer</label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <span class="checkbox__inner"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="calender-navbar">
+      <nav class="calender-navbar navbar">
+        <div class="container-fluid">
+          <div class="collapse calender-navbar-collapse overflow-auto"
+            id="calender-navbarText">
+            <div class="navbar-nav gap-4">
+              <div class="d-flex justify-content-between">
+                <h1 class="fs-19 fw-600 mb-0">HALE KAMAOLE UNIT 119 Availability
+                  Calendar</h1>
+                <button class="calender-navbar-toggler navbar-toggler"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#calender-navbarText"
+                  aria-controls="calender-navbarText" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa-solid fa-circle-xmark bg-pink"></i>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">August 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">September 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">October 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">January 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">February 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">March 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">April 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">May 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">September 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">June 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">July 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <div class="d-flex flex-column">
+                  <h2 class="fs-14 mt-4 text-center">December 2024</h2>
+                  <table class="table calendar-table">
+                    <thead>
+                      <tr class>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ..... -->
+      <div class="container mt-md-5 mt-lg-0">
+        <div class="row justify-content-center">
+          <div class="col-md-11 d-none d-lg-block">
+            <div class="card"
+              style="position: relative; top: 70px; z-index: 100">
+              <div class="card-body">
+                <div class="row justify-content-center mt-3">
+                  <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
+                    <i
+                      class="fa-solid text-muted  fa-sm fa-location-dot position-absolute ms-2"
+                      style="margin-top: 19px"></i>
+                    <input class="form-control input-css ps-4 fs-13 fw-400"
+                      type="text" placeholder="Destination" />
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-home position-absolute fa-sm ms-2"
+                      style="margin-top: 18px"></i>
+
+                    <input type="text "
+                      class="form-control input-css ps-4 fs-13 fw-400"
+                      placeholder="All Properties" />
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-calendar position-absolute fa-sm ms-2"
+                      style="margin-top: 18px"></i>
+
+                    <input type="text "
+                      class="form-control input-css ps-4 fs-13 fw-400"
+                      placeholder="Checkin-Checkout" />
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-user position-absolute fa-sm ms-2"
+                      style="margin-top: 18px"></i>
+
+                    <input type="text "
+                      class="form-control input-css ps-4 fs-13 fw-400"
+                      placeholder="2 Travelers" />
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-2 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-bed position-absolute fa-sm ms-2"
+                      style="margin-top: 18px"></i>
+
+                    <input type="text "
+                      class="form-control input-css fs-13 fw-400"
+                      placeholder="Bedroom"
+                      style="padding-left: 30px" />
+                  </div>
+                  <div class="col-md-6 col-lg-6 mt-3">
+                    <div class="card border-0">
+                      <div class="d-flex gap-4 justify-content-center mb-2 p-2"
+                        style="
+                                  border-radius: 20px;
+                                  background-color: #a5a5a5;
+                                  color: white;
+                                  width: fit-content;
+                                ">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-wordpress"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-6 col-xl-4 mt-3">
+                    <div
+                      class="d-flex gap-3 justify-content-xl-end justify-content-md-center">
+                      <button
+                        class="button-green fs-13 px-lg-4 px-xl-2 py-1 br-50">
+                        Book With Agent
+                      </button>
+                      <button class="pink-button fs-13 text-light">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 mt-md-0">
+          <div class="col-md-12 position-relative">
+            <img class="position-absolute" src="../assests/page5-greenleaf.svg"
+              width="145px" height="135px"
+              style="right: 0px; z-index: 101; top: -62px" />
+            <div class="owl-carousel owl-carousel-header owl-theme activity-page-carousel">
+              <div class="item">
+                <a href="../assests/page5(pic1) .svg"
+                  class="glightbox header-img d-none d-md-block"
+                  data-glightbox="type: image"><img
+                    src="../assests/page5(pic1) .svg" alt="image" /></a>
+
+                <a href="../assests/Slider For Mob.png"
+                  class="glightbox header-img d-md-none "
+                  data-glightbox="type: image"><img
+                    src="../assests/Slider For Mob.png" alt="image" /></a>
+              </div>
+              <div class="item">
+                <a href="../assests/Property Image1.png"
+                  class="glightbox header-img d-none d-md-block"
+                  data-glightbox="type: image"><img
+                    src="../assests/Property Image1.png" alt="image" /></a>
+
+                <a href="../assests/Slider For Mob.png"
+                  class="glightbox header-img d-md-none"
+                  data-glightbox="type: image"><img
+                    src="../assests/Slider For Mob.png" alt="image" /></a>
+              </div>
+              <div class="item">
+                <a href="../assests/Property Image2.png"
+                  class="glightbox header-img d-none d-md-block"
+                  data-glightbox="type: image"><img
+                    src="../assests/Property Image2.png" alt="image" /></a>
+
+                <a href="../assests/Slider For Mob.png"
+                  class="glightbox header-img d-md-none"
+                  data-glightbox="type: image"><img
+                    src="../assests/Slider For Mob.png" alt="image" /></a>
+              </div>
+              <div class="item">
+                <a href="../assests/Property Image3.png"
+                  class="glightbox header-img d-none d-md-block"
+                  data-glightbox="type: image"><img
+                    src="../assests/Property Image3.png" alt="image" /></a>
+
+                <a href="../assests/Slider For Mob.png"
+                  class="glightbox header-img d-md-none"
+                  data-glightbox="type: image"><img
+                    src="../assests/Slider For Mob.png" alt="image" /></a>
+              </div>
+              <div class="item">
+                <a href="../assests/Property Image4.png"
+                  class="glightbox header-img d-none d-md-block"
+                  data-glightbox="type: image"><img
+                    src="../assests/Property Image4.png" alt="image" /></a>
+
+                <a href="../assests/Slider For Mob.png"
+                  class="glightbox header-img d-md-none"
+                  data-glightbox="type: image"><img
+                    src="../assests/Slider For Mob.png" alt="image" /></a>
+              </div>
+            </div>
+            <img class="position-absolute bottom-0 header-bottom-leave"
+              src="../assests/page4(yellow1).svg" />
+          </div>
+        </div>
+
+        <div class="position-relative">
+          <!-- <img class="camera-icon" src="../assests/camera.svg" /> -->
+          <a href="../assests/Property Image2.png"
+            class="glightbox text-decoration-none camera-icon bg-white p-3 text-dark  img-box "
+            style="z-index: 122;" data-glightbox="type: image">
+            <div id="multi-link" class>
+              <center>
+                <img src="../assests/camera.png" class="glightbox" />
+                <p class="mb-1">6</p>
+                <p class="mb-0">Photos</p>
+              </center>
+            </div>
+          </a>
+        </div>
+        <div class="row position-relative">
+          <div class="col-md-12 position-absolute header-data"
+            style=" bottom: 40px; z-index: 12;">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-5 text-white">
+                <button class="pink-button">
+                  Featured
+                </button>
+                <p class="text-white mt-2 mt-md-3 header-heading">HALE KAMAOLE
+                  UNIT 119</p>
+                <div class="d-md-flex gap-3 justify-content-xl-between">
+                  <div class="d-flex gap-3 align-items-center">
+                    <i class="fa-solid text-white fa-location-dot"></i>
+                    <p class="fs-16 mb-0 text-white">Hale Kamaole, Kihei</p>
+                  </div>
+                  <div class="d-flex align-items-center"
+                    style="margin-right: 132px;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-8 col-lg-8 col-xl-5 text-white">
+                <div class="d-flex flex-md-column flex-column-reverse">
+                  <!-- <div class="card"> -->
+                  <!-- <div class="card-body"> -->
+                  <div>
+                    <p class="price-per-night">
+                      Price 200 - 250 USD Per Night
+                    </p>
+                  </div>
+
+                  <!-- </div> -->
+                  <!-- </div> -->
+                  <div
+                    class="d-md-flex justify-content-lg-center justify-content-xl-end mt-md-4 me-3 gap-3">
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="fa-regular text-white fa-building"></i>
+                      <p class="mb-0 fs-13 text-white cursor-pointer"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#Amenities-navbarText"
+                        aria-controls="Amenities-navbarText"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Amenities
+                      </p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="fa-regular text-white fa-calendar"></i>
+                      <p
+                        class="mb-0 fs-13 text-white cursor-pointer text-nowrap"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#calender-navbarText"
+                        aria-controls="calender-navbarText"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        Check Availability
+                      </p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <!-- <i class="fa-solid text-white fa-comment"></i> -->
+                      <img src="../assests/reviews.png" />
+                      <a href="#testominals"
+                        class="mb-0 fs-13 text-white text-decoration-none cursor-pointer">
+                        Reviews
+                      </a>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <label class="heart-checkbox-wishlist ">
+                        <input type="checkbox">
+                        <i class="far fa-heart cursor-pointer"></i>
+                      </label>
+                      <p
+                        class="mb-0 fs-13 text-white cursor-pointer text-nowrap">
+                        Add to Wishlist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- </div> -->
+
+        <div class="row position-relative">
+          <div class="col-10 checkin-checkout-section">
+            <div class="card ms-md-4">
+              <div class="card-body mt-2 mb-2">
+                <div class="row">
+                  <div class="col-md-4 col-xl-6 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-calendar position-absolute fa-sm ms-2"
+                      style="margin-top: 15px"></i>
+
+                    <input type="text "
+                      class="form-control input-css ps-4 fs-13 fw-400"
+                      placeholder="Checkin-Checkout" />
+                  </div>
+                  <div class="col-md-4 col-xl-3 mt-3">
+                    <i
+                      class="fa-solid text-muted fa-user position-absolute fa-sm ms-2"
+                      style="margin-top: 15px"></i>
+
+                    <input type="text "
+                      class="form-control input-css ps-4 fs-13 fw-400"
+                      placeholder="2 Travelers" />
+                  </div>
+                  <div class="col-md-4 col-xl-3 mt-3">
+                    <button id="bookitnow" onclick="togglePopup()"
+                      class="pink-button text-nowrap fw-600 w-100">Get
+                      Quote</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row mt-5 pt-5 ">
+          <div id="show" class="col-md-10 hidden  mt-5 mt-md-0 pt-5 pt-md-0">
+            <div class="card p-4 ms-md-4 position-relative">
+              <img class="position-absolute top-green-leaf"
+                src="../assests/page5-greenleaf.svg" width="145px"
+                height="135px" style="right: -22px;
+        z-index: 122;
+        top: -62px;">
+              <h2 class="fs-33 text-dark">Your desired property is available
+                on
+                your selected dates</h2>
+              <h3 class="mb-0 fs-33 text-dark fw-500">$ 545 <sub
+                  class="fs-14"> per
+                  night </sub></h3>
+
+              <table class="table available-dates-table">
+                <tbody>
+                  <tr>
+                    <td>Cleaning fee</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Rent</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Total Cost Of Stay</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Booking Deposit (Full Payment)</td>
+                    <td>$ 0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                class="d-flex flex-column flex-md-row gap-2 align-items-center justify-content-center mt-2">
+                <button class="button-green px-4">Cancellation Policy</button>
+                <a href="../html/Form.html" class="text-decoration-none">
+                  <button class="pink-button px-4">Book It Now</button>
+                </a>
+              </div>
+              <img class="position-absolute"
+                src="../assests/page4(yellow1).svg"
+                style="left: -70px; bottom: -60px;">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-xl-5 pt-5 pt-md-0 ">
+          <div class="col-md-10  mt-md-0 pt-5 pt-md-0">
+            <div class="card p-4 ms-md-4 position-relative">
+              <img class="position-absolute"
+                src="../assests/page5-greenleaf.svg" width="88.45px"
+                height="93.9px" style="right: -10px;
+        z-index: 122;
+        top: -40px;">
+              <h2 class="fs-33 text-dark text-center mt-4">Not Available</h2>
+              <h3 class="mb-0 fs-17 fw-400 text-center text-dark mt-3">This
+                property is not available on desired dates,
+                Please check Availability Calendar.</h3>
+
+              <div class="mb-4">
+                <h2 class="fs-27 mt-4">Help & Tips:</h2>
+                <div
+                  class="d-flex flex-column flex-md-row gap-2 align-items-center justify-content-between mt-4">
+                  <p class="fs-14 mb-0">Give Us A Call:</p>
+                  <button class="button-green px-3"> 1-866-456-6284</button>
+                </div>
+                <div
+                  class="d-flex flex-column flex-md-row gap-2 align-items-center justify-content-between mt-4">
+                  <p class="fs-14 mb-0">Check Availability Calendar:</p>
+                  <button class="pink-button px-5">Check</button>
+                </div>
+              </div>
+
+              <img class="position-absolute"
+                src="../assests/page4(yellow1).svg"
+                height="73px" width="74px"
+                style="left: -30px; bottom: -30px;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-md-5">
+          <div class="col-md-8 mt-md-5 pt-5 pt-md-0">
+            <div>
+              <h1 class="heading2 fs-40">Facilities</h1>
+              <img src="../assests/vectorr.svg" width="190px" alt />
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-4 col-6 col-xl-3 mt-3">
+                <div class="card card-radius">
+                  <div class="card-body py-2">
+                    <p class="fs-16 text-nowrap">Bedroom</p>
+                    <div class="d-flex gap-3 align-items-baseline mt-2">
+                      <i class="fa-solid pink fa-bed"></i>
+                      <p class="fs-16 mb-0">2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-6 col-xl-3 mt-3">
+                <div class="card card-radius">
+                  <div class="card-body py-2">
+                    <p class="fs-16 text-nowrap">Bathroom</p>
+                    <div class="d-flex gap-3 align-items-baseline mt-2">
+                      <i class="fa-solid pink fa-bathtub"></i>
+                      <p class="fs-16 mb-0">2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4  col-xl-3 mt-3">
+                <div class="card card-radius">
+                  <div class="card-body py-2">
+                    <p class="fs-16 text-nowrap">Max Limit</p>
+                    <div class="d-flex gap-3 align-items-baseline mt-2">
+                      <i class="fa-solid pink fa-users"></i>
+                      <p class="fs-16 mb-0">4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6  col-xl-3 mt-3">
+                <div class="card card-radius">
+                  <div class="card-body py-2">
+                    <p class="fs-16">Wifi</p>
+                    <div class="d-flex gap-3 align-items-baseline mt-2">
+                      <i class="fa-solid pink fa-wifi"></i>
+                      <p class="fs-16 mb-0">Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6  col-xl-3 mt-3">
+                <div class="card card-radius">
+                  <div class="card-body py-2">
+                    <p class="fs-16 text-nowrap">Air Conditioner</p>
+                    <div class="d-flex gap-3 align-items-baseline mt-2">
+                      <i class="fa-solid pink fa-snowflake"></i>
+                      <p class="fs-16 mb-0">Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="fs-12 text-decoration-underline text-end mt-3"
+                style="margin-left: -4px">
+                Checkout All Facilities
+              </p>
+            </div>
+            <div>
+              <h1 class="heading2 fs-40 mt-2">Description</h1>
+              <img src="../assests/vectorr.svg" />
+            </div>
+            <p class="fs-15 fw-300 mt-3 " style="text-align: justify;">
+              Come and enjoy our beautiful Maui condo Ground floor unit with
+              beautiful and welcoming Lanai with views to ocean and lush
+              garden
+              area Inside is bright and spacious with tropical furnishings 2
+              sofas
+              and flat screen TV with CD DVD player You will enjoy Hawaiian
+              artwork by local artists throughout Recently remodeled kitchen
+              with
+              all amenities including all stainless steel appliances New
+              washer
+              and dryer Large bedroom boasts king size bed air-conditioning
+              flat
+              screen TV and safe in closet A beautiful Lanai with lush garden
+              area
+              and views to ocean Lanai closet holds boogie boards beach
+              umbrella
+              small cooler masks fins and snorkels TA-183-817-8304-01
+            </p>
+          </div>
+          <div class="col-md-4 mt-md-5 pt-5 pt-md-0">
+            <div class="mb-3">
+              <h1 class="heading2 fs-40 ">Location</h1>
+              <img src="../assests/vectorr.svg" width="190px" />
+            </div>
+            <img src="../assests/basemap.png" width="100%" height="370px"
+              style="border-radius: 20px;" />
+          </div>
+        </div>
+        <div id="testominals" class="row mt-5 justify-content-center">
+          <div class="col-md-10">
+            <section class="deals position-relative">
+              <img class="yellow5" src="../assests/email-leaf.svg"
+                width="119px"
+                height="120px" />
+              <div class="card-block">
+                <div class="owl-carousel owl-theme multi-carousel">
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo2.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo1.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo2.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo1.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo1.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="card" style="width: 20rem; height: 23rem">
+                      <div class="mt-3">
+                        <div class="col-md-3 d-flex">
+                          <img src="../assests/comma.svg" class="card-img-top"
+                            alt height="49px" width="40px" />
+                          <div class="col-md-9 d-flex"
+                            style="margin-left: 30px">
+                            <img src="../assests/photo1.svg"
+                              class="card-img-bottom" alt />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">
+                          Lorem Ipsum
+                        </h5>
+                        <h5 class="card-title d-flex justify-content-center">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                          Lorem ipsum dolor sit amet consectetur. Molestie
+                          purus
+                          amet vel quis scelerisque ipsum tincidunt nulla
+                          nisi.
+                          Elementum orci a facilisis dolor porttitor purus
+                          amet
+                          libero. Vitae et turpis sed aliquet viverra amet
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <img src="../assests/comma2.svg"
+                            class="card-img-down"
+                            alt height="49px" width="40px" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="multi-carousel-bottom-leaf"
+                src="../assests/green-bottom-carosel-icon.svg" />
+            </section>
+          </div>
+        </div>
+        <br />
+
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-11">
+            <div class="card">
+              <div class="card-body p-1 p-md-4">
+                <div class="row">
+                  <div class="col-lg-6 mt-3 d-flex align-items-center">
+                    <p class="fs-34">
+                      Get the hot destinations <br />right into your inbox
+                    </p>
+                  </div>
+                  <div
+                    class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="position-relative w-100">
+                      <input type="email"
+                        class="form-control mb-2 input-form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Email Address" width="700px"
+                        height="20px" />
+                      <button type="button" class="green-button fs-18">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-none d-lg-block">
+                  <img class="fourth-yellowleaf"
+                    src="../assests/email-leaf.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer code -->
+      <div class="container-fluid mt-5">
+        <div class="row justify-content-center upper-row m-0">
+          <div class="position-relative d-none d-md-block">
+            <img class="footer-yellow-leaf" src="../assests/footer-yellow.svg"
+              width="119px" height="120px" />
+          </div>
+          <div class="col-lg-5 mt-3 mt-md-0">
+            <div
+              class="d-flex justify-content-center justify-content-xl-start">
+              <div>
+                <p class="fs-30 size-34 text-nowrap mb-0 text-light">Get
+                  Connected With Us</p>
+                <span
+                  style="border: 3px solid #00fe8c; width: 90px; display: block"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-3 mt-md-0 d-flex justify-content-center">
+            <div
+              class="d-flex gap-xl-5 gap-3 gap-md-3 justify-content-center p-2 px-4"
+              style="border: 1.5px solid #00FE8A; border-radius: 25px; width: fit-content;">
+              <i class="fa-brands icon-size fa-2x fa-facebook-f"></i>
+              <i class="fa-brands icon-size fa-2x fa-instagram"></i>
+              <i class="fa-brands icon-size fa-2x fa-twitter"></i>
+              <i class="fa-brands icon-size fa-2x fa-pinterest"></i>
+              <i class="fa-brands icon-size fa-2x fa-google"></i>
+              <i class="fa-brands icon-size fa-2x fa-youtube"></i>
+              <i class="fa-brands icon-size fa-2x fa-linkedin"></i>
+              <i class="fa-brands icon-size fa-2x fa-wordpress"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0 p-0">
+          <div class="col-md-12 p-0">
+            <div class="footer bg-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4  col-xl-2 mt-5">
+                    <div class="single_footer">
+                      <h4 class="fs-21">Contact Us</h4>
+                      <hr style="color: #ff385c" />
+                      <div class="d-flex gap-2 mt-4">
+                        <i class="fa-solid text-dark fa-phone"></i>
+                        <p class="fs-13 f-style">1-604-466-0309</p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="fa-solid text-dark fa-phone"></i>
+                        <p class="fs-13 f-style">1-866-456-6284</p>
+                      </div>
+                      <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="mb-0 fs-12 f-style">info@tropicalbound.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4  col-xl-2 mt-5">
+                    <div class="single_footer single_footer_address">
+                      <h4 class="fs-21">Useful Links</h4>
+                      <hr style="color: #ff385c" />
+
+                      <div class="mt-4">
+                        <p class="fs-13 f-style">Activities</p>
+                        <p class="fs-13 f-style">Contact Us</p>
+                        <p class="fs-13 f-style">Happy Customers</p>
+                        <p class="fs-13 f-style">Tropical Links</p>
+                        <p class="fs-13 f-style">Privacy Policy</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4  col-xl-3 mt-5">
+                    <div class="single_footer single_footer_address">
+                      <h4 class="fs-21">Security Standards</h4>
+                      <hr style="color: #ff385c" />
+                      <div class="mt-4">
+                        <img src="../assests/consumer.svg" width="180px"
+                          height="46px" />
+                      </div>
+                      <div class="d-flex mt-4 gap-2 align-items-center">
+                        <img src="../assests/lock.svg" width="44px"
+                          height="44px" />
+                        <img src="../assests/visa.svg" width="66px"
+                          height="19px" />
+                        <img src="../assests/mastercard.svg" width="50px"
+                          height="30px" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4  col-xl-3 mt-5">
+                    <div class="single_footer single_footer_address">
+                      <h4 class="fs-21">We are Authorized</h4>
+                      <hr style="color: #ff385c" />
+                      <div class="mt-4">
+                        <img src="../assests/HVCBMemberLogo.svg"
+                          width="172px" height="84px" />
+                      </div>
+                      <div class="mt-2">
+                        <img src="../assests/insurance.svg"
+                          width="182px" height="43px" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-xl-2 mt-5">
+                    <div class="single_footer single_footer_address">
+                      <h4 class="fs-21">Our Partners</h4>
+                      <hr style="color: #ff385c" />
+                      <div class="mt-4">
+                        <img src="../assests/escapia.svg" width="121px"
+                          height="31px" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr style="color: #ff385c" />
+                <div class="row">
+                  <div
+                    class="col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-between">
+                    <p class="fs-13 f-style">
+                      Copyright © 2001–2023 Tropicalbound.com™. All rights
+                      reserved.
+                    </p>
+                    <p class="fs-13 f-style">Made With ❤️ By
+                      Binarybrix.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+  const lightbox = GLightbox({
+  touchNavigation: true,
+  loop: true,
+  width: "90vw",
+  height: "90vh"
+});
+</script>
+
+    <script>
+const button = document.getElementById('bookitnow');
+const popup = document.getElementById('show');
+
+function togglePopup() {
+  const popup = document.getElementById('show');
+  popup.classList.toggle('visible');
+}
+
+</script>
+<script src="../js/sidebar.js">
+</script>
+
+    <script>
+
+  $(".owl-carousel-header").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+  $(".multi-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+</script>
+
+  </html>

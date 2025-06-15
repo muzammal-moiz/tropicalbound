@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/mediaQueryAloaDeals.css" />
+
+  </head>
+  <style>
+  .trending-carousel .owl-nav button.owl-prev,
+  .trending-carousel .owl-nav button.owl-next,
+  .trending-carousel button.owl-dot.owl-nav {
+    background-color: white !important;
+    color: black;
+  }
+</style>
+
+  <body>
+    <!-- <div class="container-fluid p-0"> -->
+      <div class="logo">
+        <div class="w-100  position-absolute"
+          style="background-color: #000; height: 19px;">
+        </div>
+    
+        <nav class="navbar navbar-expand-xl container-fluid">
+          <div
+            class="d-flex justify-content-center w-100">
+            <div class="ms-2 ms-md-3 ms-lg-5 ms-xl-3 ">
+              <a class="navbar-brand" href="../html/home.html"><img
+                  src="../assests/Logo.png" class="logo-width" /></a>
+            </div>
+            <div class="container-fluid mt-xl-5 d-flex justify-content-end align-items-center ms-0 ms-md-3 ms-lg-3 ms-xl-0 w-100">
+              <div
+                class=" collapse navbar-collapse justify-content-center"
+                id="navbarText">
+                <div class="navbar-nav gap-5 gap-xl-3">
+                  <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="position: absolute; right: 10px; top: 5px">
+                    <i class="fa fa-close"></i>
+                  </button>
+                  <a class="nav-link  fs-16" aria-current="page"
+                    href="../html/home.html">Home</a>
+                  <a class="nav-link active fs-16"
+                    href="../html/Aloha Deals.html">Aloha
+                    Deals</a>
+                  <a class="nav-link  fs-16" href="../html/About.html">About</a>
+                  <a class="nav-link  fs-16"
+                  href="../html/Activity.html">Activities</a>
+                <a class="nav-link  fs-16"
+                  href="../html/Services.html">Tropical
+                  Links</a>
+                  <a class="nav-link fs-16"
+                    href="../html/Testominals.html">Testimonials</a>
+                  <a class="nav-link fs-16"
+                    href="../html/contact.html">Contact</a>
+                </div>
+              </div>
+              <div class="px-xl-5 px-0 pt-4 pt-xl-0 d-flex">
+               
+                <div class="nav-item dropdown">
+                  <a href="#" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">
+                    <img src="../assests/profile.svg" width="34px;" />
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end  border-0 rounded-0 rounded-bottom m-0">
+                      <a href="./settings-personal-information.html" class="dropdown-item">My Profile</a>
+                      <hr class="dropdown-divider">
+                      <a href="./settings.html" class="dropdown-item">Settings</a>
+                      <hr class="dropdown-divider">
+                      <a href="../authentication/login.html" class="dropdown-item">Log Out</a>
+                  </div>
+              </div>
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+    
+      </div>
+    <div class="container ">
+      <div class="row justify-content-center mt-5 ">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="w-min-content text-nowrap">
+              <h1 class="heading fs-40 w-100">Aloha Super Deals</h1>
+              <img src="../assests/Vector.svg" class="w-100" />
+            </div>
+          </div>
+          <p class="fs-18 mt-3 fw-400 text-center mb-0">
+            Offering you super deals on more than 6 vacation rentals.
+          </p>
+          <div class="card mt-4 position-relative"
+            style=" border-radius: 40px;">
+            <img class="page4-greenleaf1" src="../assests/greenleafall.svg" />
+            <img class="position-absolute d-none d-lg-block"
+              src="../assests/map-leaf.svg" style="bottom: -60px;
+          left: -66px;
+          z-index: 12;" />
+            <div class="card-body p-0">
+              <div class="row">
+                <div class=" col-xl-6 p-0 d-xl-block d-none">
+                  <img src="../assests/page4(map).svg" class="map-padding" />
+                </div>
+                <div class="col-xl-6 col-border mt-md-0">
+
+                  <div class="row mt-md-5 mt-3 gap-4 gap-md-0">
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                        <div class="card-body">
+                          <div class="position-relative">
+                            <button
+                              class="card-price-tags position-absolute fs-9 pe-2 ps-2"
+                              style="top: 7px ; left: 7px;">
+                              $200 USD Per Night
+                            </button>
+                            <label class="heart-checkbox heart-absolute">
+                              <input type="checkbox">
+                              <i class="fas fa-heart cursor-pointer"></i>
+                            </label>
+                          </div>
+                          <img src="../assests/page 4 cardimage.svg" style="
+                      width: 100%;
+                      height: 140px;
+                      object-fit: cover;
+                      border-radius: 20px;
+                    " />
+                          <p class="fs-17 mt-3 text-center">Kamaole Sands
+                            #1-204</p>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-location-dot text-dark"></i>
+                              <p class="fs-11">Kihei, Maui</p>
+                            </div>
+                            <div class="d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-bed pink"></i>
+                              <p class="fs-11">2 Bedrooms</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-bathtub pink"></i>
+                              <p class="fs-11">2 Bathrooms</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-users pink"></i>
+                              <p class="fs-11">4 People</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-wifi pink"></i>
+                              <p class="fs-11">Wifi 24/7</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center mt-2 mb-2">
+                            <a  href="../html/Properties.html" class="sm-brgreen text-decoration-none ">
+                              View More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ">
+                      <div class="card shadow">
+                        <div class="card-body">
+                          <div class="position-relative">
+                            <button
+                              class="card-price-tags position-absolute fs-9 pe-2 ps-2"
+                              style="top: 7px ; left: 7px;">
+                              $200 USD Per Night
+                            </button>
+                            <label class="heart-checkbox heart-absolute">
+                              <input type="checkbox">
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
+                          <img src="../assests/page 4 cardimage.svg" style="
+                      width: 100%;
+                      height: 140px;
+                      object-fit: cover;
+                      border-radius: 20px;
+                    " />
+                          <p class="fs-17 mt-3 text-center">Kamaole Sands
+                            #1-204</p>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-location-dot text-dark"></i>
+                              <p class="fs-11">Kihei, Maui</p>
+                            </div>
+                            <div class="d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-bed pink"></i>
+                              <p class="fs-11">2 Bedrooms</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-bathtub pink"></i>
+                              <p class="fs-11">2 Bathrooms</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-users pink"></i>
+                              <p class="fs-11">4 People</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-wifi pink"></i>
+                              <p class="fs-11">Wifi 24/7</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center mt-2 mb-2">
+                            <button class="sm-brgreen text-decoration-none">
+                              View More
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4 gap-4 gap-md-0">
+                    <div class="col-md-6">
+                      <div class="card shadow">
+                        <div class="card-body">
+                          <div class="position-relative">
+                            <button
+                              class="card-price-tags position-absolute fs-9 pe-2 ps-2"
+                              style="top: 7px ; left: 7px;">
+                              $200 USD Per Night
+                            </button>
+                            <label class="heart-checkbox heart-absolute">
+                              <input type="checkbox">
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
+                          <img src="../assests/page 4 cardimage.svg" style="
+                      width: 100%;
+                      height: 140px;
+                      object-fit: cover;
+                      border-radius: 20px;
+                    " />
+                          <p class="fs-17 mt-3 text-center">Kamaole Sands
+                            #1-204</p>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-location-dot text-dark"></i>
+                              <p class="fs-11">Kihei, Maui</p>
+                            </div>
+                            <div class="d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-bed pink"></i>
+                              <p class="fs-11">2 Bedrooms</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-bathtub pink"></i>
+                              <p class="fs-11">2 Bathrooms</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-users pink"></i>
+                              <p class="fs-11">4 People</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-wifi pink"></i>
+                              <p class="fs-11">Wifi 24/7</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center mt-2 mb-2">
+                            <button class="sm-brgreen">
+                              View More
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-md-block d-none">
+                      <div class="card shadow">
+                        <div class="card-body">
+                          <div class="position-relative">
+                            <button
+                              class="card-price-tags position-absolute fs-9 pe-2 ps-2"
+                              style="top: 7px ; left: 7px;">
+                              $200 USD Per Night
+                            </button>
+                            <label class="heart-checkbox heart-absolute">
+                              <input type="checkbox">
+                              <i class="fas fa-heart"></i>
+                            </label>
+                          </div>
+                          <img src="../assests/page 4 cardimage.svg" style="
+                      width: 100%;
+                      height: 140px;
+                      object-fit: cover;
+                      border-radius: 20px;
+                    " />
+                          <p class="fs-17 mt-3 text-center">Kamaole Sands
+                            #1-204</p>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-location-dot text-dark"></i>
+                              <p class="fs-11">Kihei, Maui</p>
+                            </div>
+                            <div class="d-flex">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-bed pink"></i>
+                              <p class="fs-11">2 Bedrooms</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-bathtub pink"></i>
+                              <p class="fs-11">2 Bathrooms</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between ms-2">
+                            <div
+                              class="d-flex justify-content-center align-items-baseline gap-2">
+                              <i class="fa-solid fa-users pink"></i>
+                              <p class="fs-11">4 People</p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-baseline">
+                              <i class="fa-solid fa-wifi pink"></i>
+                              <p class="fs-11">Wifi 24/7</p>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center mt-2 mb-2">
+                            <button class="sm-brgreen">
+                              View More
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mt-4 justify-content-center d-flex mb-3 mb-md-3 mb-lg-3 mb-xl-0">
+                      <button class="fs-16 text-white pink-button ">Load More
+                        <span class="ms-2"> <img
+                            src="../assests/arrow-down.svg" width="15px" />
+                        </span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-md-11">
+          <div class="card">
+            <div class="card-body p-1 p-md-4">
+              <div class="row">
+                <div class="col-lg-6 mt-3 d-flex align-items-center">
+                  <p class="fs-34">
+                    Get the hot destinations <br />right into your inbox
+                  </p>
+                </div>
+                <div
+                  class="col-lg-6 d-flex justify-content-center align-items-center">
+                  <div class="position-relative w-100">
+                    <input type="email"
+                      class="form-control mb-2 input-form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Email Address" width="700px" height="20px" />
+                    <button type="button" class="green-button fs-18">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative d-none d-lg-block">
+                <img class="fourth-yellowleaf"
+                  src="../assests/email-leaf.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center upper-row m-0">
+        <div class="position-relative d-none d-md-block">
+          <img class="footer-yellow-leaf" src="../assests/footer-yellow.svg"
+            width="119px" height="120px" />
+        </div>
+        <div class="col-lg-5 mt-3 mt-md-0">
+          <div class="d-flex justify-content-center justify-content-xl-start">
+            <div>
+              <p class="fs-30 text-nowrap size-34 mb-0 text-light">Get Connected With Us</p>
+              <span
+                style="border: 3px solid #00fe8c; width: 90px; display: block"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-3 mt-md-0 d-flex justify-content-center">
+          <div
+            class="d-flex gap-xl-5 gap-3 gap-md-3 justify-content-center p-2 px-4"
+            style="border: 1.5px solid #00FE8A; border-radius: 25px; width: fit-content;">
+            <i class="fa-brands icon-size fa-2x fa-facebook-f"></i>
+            <i class="fa-brands icon-size fa-2x fa-instagram"></i>
+            <i class="fa-brands icon-size fa-2x fa-twitter"></i>
+            <i class="fa-brands icon-size fa-2x fa-pinterest"></i>
+            <i class="fa-brands icon-size fa-2x fa-google"></i>
+            <i class="fa-brands icon-size fa-2x fa-youtube"></i>
+            <i class="fa-brands icon-size fa-2x fa-linkedin"></i>
+            <i class="fa-brands icon-size fa-2x fa-wordpress"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 p-0">
+        <div class="col-md-12 p-0">
+          <div class="footer bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4  col-xl-2 mt-5">
+                  <div class="single_footer">
+                    <h4 class="fs-21">Contact Us</h4>
+                    <hr style="color: #ff385c" />
+                    <div class="d-flex gap-2 mt-4">
+                      <i class="fa-solid text-dark fa-phone"></i>
+                      <p class="fs-13 f-style">1-604-466-0309</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <i class="fa-solid text-dark fa-phone"></i>
+                      <p class="fs-13 f-style">1-866-456-6284</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                      <i class="fa-regular fa-envelope"></i>
+                      <p class="mb-0 fs-12 f-style">info@tropicalbound.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4  col-xl-2 mt-5">
+                  <div class="single_footer single_footer_address">
+                    <h4 class="fs-21">Useful Links</h4>
+                    <hr style="color: #ff385c" />
+
+                    <div class="mt-4">
+                      <p class="fs-13 f-style">Activities</p>
+                      <p class="fs-13 f-style">Contact Us</p>
+                      <p class="fs-13 f-style">Happy Customers</p>
+                      <p class="fs-13 f-style">Tropical Links</p>
+                      <p class="fs-13 f-style">Privacy Policy</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4  col-xl-3 mt-5">
+                  <div class="single_footer single_footer_address">
+                    <h4 class="fs-21">Security Standards</h4>
+                    <hr style="color: #ff385c" />
+                    <div class="mt-4">
+                      <img src="../assests/consumer.svg" width="180px"
+                        height="46px" />
+                    </div>
+                    <div class="d-flex mt-4 gap-2 align-items-center">
+                      <img src="../assests/lock.svg" width="44px"
+                        height="44px" />
+                      <img src="../assests/visa.svg" width="66px"
+                        height="19px" />
+                      <img src="../assests/mastercard.svg" width="50px"
+                        height="30px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4  col-xl-3 mt-5">
+                  <div class="single_footer single_footer_address">
+                    <h4 class="fs-21">We are Authorized</h4>
+                    <hr style="color: #ff385c" />
+                    <div class="mt-4">
+                      <img src="../assests/HVCBMemberLogo.svg"
+                        width="172px" height="84px" />
+                    </div>
+                    <div class="mt-2">
+                      <img src="../assests/insurance.svg"
+                        width="182px" height="43px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xl-2 mt-5">
+                  <div class="single_footer single_footer_address">
+                    <h4 class="fs-21">Our Partners</h4>
+                    <hr style="color: #ff385c" />
+                    <div class="mt-4">
+                      <img src="../assests/escapia.svg" width="121px"
+                        height="31px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="color: #ff385c" />
+              <div class="row">
+                <div
+                  class="col-lg-12 col-sm-12 col-xs-12 d-flex justify-content-between">
+                  <p class="fs-13 f-style">
+                    Copyright © 2001–2023 Tropicalbound.com™. All rights
+                    reserved.
+                  </p>
+                  <p class="fs-13 f-style">Made With ❤️ By Binarybrix.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+    src="../js/sidebar.js">
+    </script>
+</html>

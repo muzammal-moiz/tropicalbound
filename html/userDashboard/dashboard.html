@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tropical Bound - Hawaii Vacation Rentals</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="../../img/favicon.ico" rel="icon">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../../css/style.css" rel="stylesheet">
+</head>
+
+<body class="poppins bg-light-green">
+    <div class=" position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center ">
+            <div class="spinner-border spinner-color wh-3rem"  role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- custom sidebar -->
+
+        <!-- custom sidebar ends -->
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar  navbar-light">
+                <a href="dashboard.html" class="navbar-brand mx-4 mb-3">
+                    <img height="50px" src="../../img/Logo.svg" alt="Logo"></img>
+                </a>
+
+                <div class="navbar-nav w-100">
+                    <a href="dashboard.html" class="nav-item nav-link active green"><i
+                            class="bi bi-grid-fill active green"></i>Dashboard</a>
+                    <a href="bookings.html" class="nav-item nav-link text-white py-2"><img src="../../img/Bookings.png"
+                            class="img-fluid pe-2 ps-customized" height="20px"></img>Bookings</a>
+                    <a href="reviews.html" class="nav-item nav-link text-white py-2"><img src="../../img/Reviews.png"
+                            class="img-fluid pe-2 ps-customized" height="20px"></img>Reviews</a>
+                    <a href="wishlist.html" class="nav-item nav-link text-white"><i
+                            class="bi bi-heart-fill"></i>Wishlist</a>
+                    <a href="settings.html" class="nav-item nav-link text-white"><i
+                            class="bi bi-nut-fill "></i>Settings</a>
+
+                    <div class="nav-item dropdown">
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content bg-light-green" >
+            <!-- Navbar Start -->
+            <nav
+                class="navbar navbar-expand bg-white navbar-light sticky-top px-3 px-md-5 px-lg-5 px-xl-5 px-xxl-5 py-0">
+
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars  fill-black"></i>
+                </a>
+
+
+
+                <div class="navbar-nav align-items-center ms-auto">
+
+                    <div class="nav-item dropdown">
+
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class=" me-lg-2 object-fit-contain" src="../../img/bell-notification.svg"
+                            height="16px" alt="image">
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="../../img/user.jpg" alt="" height="30px">
+                            <span class="d-none d-lg-inline-flex text-secondary  point-nine-rem">Thomas Shelby</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="./settings-personal-information.html" class="dropdown-item">My Profile</a>
+                            <hr class="dropdown-divider">
+                            <a href="./settings.html" class="dropdown-item">Settings</a>
+                            <hr class="dropdown-divider">
+                            <a href="../authentication/login.html" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Heading Start -->
+            <div
+                class="container-fluid d-flex justify-content-between mt-5 mb-33px px-3 px-md-5 px-lg-5 px-xl-5 px-xxl-5 ">
+                <h3 class="dashboard-word mb-0 ">Dashboard</h3>
+            </div>
+            <!-- Heading End -->
+
+            <!-- Sale & Revenue Start -->
+            <div class="container-fluid  px-3 px-md-5 px-lg-5 px-xl-5 px-xxl-5 mb-custom-one">
+                <div class="row g-4  g-md-3 g-lg-3 g-xl-3 g-xxl-3 ">
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3  ">
+                        <div class="bg-white rounded-custom-one  p-3 custom-card-height border-radius-20 ">
+
+                            <div>
+                                <div class="d-flex flex-row justify-content-between  ">
+                                    <p class="black-text-dashboard-card">Total Bookings</p>
+                                    <a href="#"><i class="bi bi-arrow-up-right-circle-fill text-black"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-between">
+
+                                <div class="ms-0">
+
+                                    <p class=" mb-0  fw-bold text-black number">17</p>
+                                    <p class="mb-0 green-text-dashboard-card">See your bookings</p>
+                                </div>
+                                <img src="../../img/graph.png" />
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                        <div class="bg-white rounded-custom-one  p-3 custom-card-height border-radius-20 ">
+
+                            <div>
+                                <div class="d-flex flex-row justify-content-between  ">
+                                    <p class="black-text-dashboard-card">Total Properties in Wishlist</p>
+                                    <a href="#"><i class="bi bi-arrow-up-right-circle-fill text-black"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-between">
+
+                                <div class="ms-0">
+
+                                    <p class=" mb-0  fw-bold text-black number">150</p>
+                                    <p class="mb-0 green-text-dashboard-card">See your wishlist</p>
+                                </div>
+                                <img src="../../img/graph.png" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3  ">
+                        <div class="bg-white rounded-custom-one  p-3  custom-card-height border-radius-20 ">
+
+                            <div>
+                                <div class="d-flex flex-row justify-content-between  ">
+                                    <p class="black-text-dashboard-card">Your Reviews</p> <a href="#"><i
+                                            class="bi bi-arrow-up-right-circle-fill text-black"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-between">
+
+                                <div class="ms-0">
+
+                                    <p class=" mb-0  fw-bold text-black number">10</p>
+                                    <p class="mb-0 green-text-dashboard-card">See your reviews</p>
+                                </div>
+                                <img src="../../img/graph.png" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                        <div class="bg-white rounded-custom-one  p-3 custom-card-height border-radius-20 ">
+
+                            <div>
+                                <div class="d-flex flex-row justify-content-between  ">
+                                    <p class="black-text-dashboard-card">Pending Reviews</p>
+                                    <a href="#"> <i class="bi bi-plus-circle-fill text-black"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-between">
+
+                                <div class="ms-0">
+
+                                    <p class=" mb-0  fw-bold text-black number">10</p>
+                                    <p class="mb-0 green-text-dashboard-card">Tell others about us</p>
+                                </div>
+                                <img src="../../img/graph-red.png" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sale & Revenue End -->
+
+            <!-- Featured Properties Start -->
+
+            <div class="container-fluid px-md-5 px-lg-5 px-xl-5 px-xxl-5 mt-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="bg-white p-3 pt-md-3 pb-md-4 px-md-4 border-radius-20">
+                            <div class="d-flex align-items-center  flex-row  ">
+                                <h6 class="featured-properties-word mb-0">Featured Properties</h6>
+                                <button
+                                    class=" d-flex flex-row justify-content-center align-items-center ms-auto rounded-pill border-0 px-2 px-md-3 py-1 view-all-button bg-green">View
+                                    All <i
+                                        class="d-flex flex-row justify-content-center align-items-center bi bi-arrow-up-right-circle-fill px-2 height-20px"></i></button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-xl-6 col-xxl-4   mt-4">
+                                    <div
+                                        class="card featured-card d-xl-flex flex-lg-row flex-column rounded-custom-two ">
+                                        <div class="card-header card-header-custom bg-transparent position-relative">
+                                            <img src="../../img/featured-1.svg" width="100%" alt=""
+                                                class="height-custom-dashboard-card-image ">
+                                            <button
+                                                class="button bg-danger rounded-pill text-white border-0 featured-button position-absolute m-4 m-lg-3 m-xl-3 m-xxl-4">
+                                                Featured</button>
+                                        </div>
+                                        <div class="card-body card-body-custom">
+                                            <div>
+                                                <div
+                                                    class="d-flex  justify-content-between flex-column w-100  mt-3 mt-xxl-0">
+
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0 featured-title">Kamaole Sands #1...</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="text-black featured-card-text-location"> <i
+                                                                    class="bi bi-geo-alt-fill"></i>Kihei, Maui
+                                                            </p>
+                                                        </div>
+                                                        <div><button type="button"
+                                                                class="btn btn-outline-success rounded-pill book-with-agent-button">Book
+                                                                With Agent</button></div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="featured-price mb-0 col-5">$200 USD Per Night</p>
+                                                        <div class="div-stars   ">
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star-half stars color-yellow"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-xl-6 col-xxl-4  mt-4">
+                                    <div
+                                        class="card featured-card d-xl-flex flex-lg-row flex-column rounded-custom-two ">
+                                        <div class="card-header card-header-custom bg-transparent position-relative">
+                                            <img src="../../img/featured-1.svg" width="100%" alt=""
+                                                class="height-custom-dashboard-card-image">
+                                            <button
+                                                class="button bg-danger rounded-pill text-white border-0 featured-button position-absolute m-4 m-lg-3 m-xl-3 m-xxl-4">
+                                                Featured</button>
+                                        </div>
+                                        <div class="card-body card-body-custom">
+                                            <div>
+                                                <div
+                                                    class="d-flex  justify-content-between flex-column w-100  mt-3 mt-xxl-0">
+
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0 featured-title">Kamaole Sands #1...</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="text-black featured-card-text-location"> <i
+                                                                    class="bi bi-geo-alt-fill"></i>Kihei, Maui
+                                                            </p>
+                                                        </div>
+                                                        <div><button type="button"
+                                                                class="btn btn-outline-success rounded-pill book-with-agent-button">Book
+                                                                With Agent</button></div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="featured-price mb-0 col-5">$200 USD Per Night</p>
+                                                        <div class="div-stars">
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star-half stars color-yellow"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-6 col-xxl-4  mt-4">
+                                    <div
+                                        class="card featured-card d-xl-flex flex-lg-row flex-column rounded-custom-two ">
+                                        <div class="card-header card-header-custom bg-transparent position-relative">
+                                            <img src="../../img/featured-1.svg" width="100%" alt=""
+                                                class="height-custom-dashboard-card-image">
+                                            <button
+                                                class="button bg-danger rounded-pill text-white border-0 featured-button position-absolute m-4 m-lg-3 m-xl-3 m-xxl-4">
+                                                Featured</button>
+                                        </div>
+                                        <div class="card-body card-body-custom">
+                                            <div>
+                                                <div
+                                                    class="d-flex  justify-content-between flex-column w-100  mt-3 mt-xxl-0 ">
+
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0 featured-title">Kamaole Sands #1...</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="text-black featured-card-text-location"> <i
+                                                                    class="bi bi-geo-alt-fill"></i>Kihei, Maui
+                                                            </p>
+                                                        </div>
+                                                        <div><button type="button"
+                                                                class="btn btn-outline-success rounded-pill book-with-agent-button">Book
+                                                                With Agent</button></div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="featured-price mb-0 col-5">$200 USD Per Night</p>
+                                                        <div class=" div-stars  ">
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star-half stars color-yellow"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-6 col-xxl-4  mt-4">
+                                    <div
+                                        class="card featured-card d-xl-flex flex-lg-row flex-column rounded-custom-two ">
+                                        <div class="card-header card-header-custom bg-transparent position-relative">
+                                            <img src="../../img/featured-1.svg" width="100%" alt="image of hotel"
+                                                class="height-custom-dashboard-card-image">
+                                            <button
+                                                class="button bg-danger rounded-pill text-white border-0 featured-button position-absolute m-4 m-lg-3 m-xl-3 m-xxl-4">
+                                                Featured</button>
+                                        </div>
+                                        <div class="card-body card-body-custom">
+                                            <div>
+                                                <div
+                                                    class="d-flex  justify-content-between flex-column w-100  mt-3 mt-xxl-0">
+
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h5 class="mb-0 featured-title">Kamaole Sands #1...</h5>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <p class="text-black featured-card-text-location"> <i
+                                                                    class="bi bi-geo-alt-fill"></i>Kihei, Maui
+                                                            </p>
+                                                        </div>
+                                                        <div><button type="button"
+                                                                class="btn btn-outline-success rounded-pill book-with-agent-button">Book
+                                                                With Agent</button></div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="featured-price mb-0 col-5">$200 USD Per Night</p>
+                                                        <div class="div-stars">
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star text-red stars"></i>
+                                                            <i class="fa fa-star-half stars color-yellow"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Properties End -->
+
+                <!-- Footer Start -->
+                <div class="footer footer--3 mt-5 mb-3 text-black">
+                    <div class="footer__inner">
+                        <p>Copyright © 2001–2023 Tropicalbound.com™. All rights reserved.</p>
+                    </div>
+                </div>
+                <!-- Footer End -->
+            </div>
+            <!-- Content End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg   text-black btn-lg-square back-to-top "><i class="bi bi-arrow-up"></i></a>
+
+
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="../../lib/easing/easing.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="../../js/main.js"></script>
+</body>
+
+</html>
